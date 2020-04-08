@@ -15,7 +15,7 @@ while True:
             # draw all lines
             cv2.line(img, tuple(bbox[i][0]), tuple(bbox[(i+1) % len(bbox)][0]), color=(255, 0, 0), thickness=2)
         if data:
-            playsound('audio.mp3')
+            playsound('short_msg.mp3')
             print("[+] QR Code detected, data:", data)
     # display the result
     cv2.imshow("img", img)    
